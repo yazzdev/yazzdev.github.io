@@ -50,7 +50,7 @@ body {
       transparent 55%
     ),
     linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url("/assets/images/hero-bg.jpg") center/cover no-repeat;
+    url("./assets/images/hero-bg.jpg") center/cover no-repeat;
 }
 .avatar {
   width: 140px;
