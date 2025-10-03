@@ -2,391 +2,441 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>
-    yazDev — Dyaz Amrullah
-  </title>
-
-  <!-- Bootstrap -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dyaz Amrullah</title>
+  <link rel="icon" type="image/png" href="./assets/images/my-logo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-  <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link href="./assets/css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+  <div class="cursor-glow"></div>
 
-  <!-- NAVBAR -->
+  <div class="stars-bg">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </div>
+
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#home"><i class="fa-solid fa-code me-2"></i>yazDev</a>
+      <a class="navbar-brand" href="#home"><img src="./assets/images/my-horizontal-logo.png" alt="My Horizontal Logo" class="my-logo me-2"></a>
       <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
         <i class="fa-solid fa-bars"></i>
       </button>
       <div id="nav" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          <li class="nav-item ms-2">
-            <a class="btn btn-gold btn-sm" href="./assets/files/CV_Dyaz_Amrullah.pdf" target="_blank"><i
-                class="fa-solid fa-file-pdf me-1"></i>Download CV</a>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-primary-custom btn-sm" href="./assets/files/Resume_Dyaz_Amrullah.pdf" target="_blank">
+              <i class="fa-solid fa-file-pdf me-1"></i>Download CV
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header id="home" class="hero">
-    <div class="container text-center" data-aos="fade-up">
-      <img src="./assets/images/profile.jpg" alt="Dyaz Amrullah" class="avatar mb-3">
-      <h1 class="display-5 mb-1">Dyaz Amrullah</h1>
-      <p class="lead mb-2"><span id="typed"></span></p>
-      <p class="small-muted mb-3">Recent graduate in Informatics Engineering • BNSP-certified Junior Web Programmer •
-        Back-End Developer</p>
-      <div class="d-flex justify-content-center gap-2">
-        <a href="#projects" class="btn btn-gold"><i class="fa-solid fa-briefcase me-2"></i>View Projects</a>
-        <a href="#contact" class="btn btn-outline-light btn-custom"><i class="fa-solid fa-paper-plane me-2"></i>Hire
-          Me</a>
-      </div>
-
-      <!-- counters -->
-      <div class="d-flex justify-content-center gap-4 mt-4">
-        <div class="text-center">
-          <div class="h3 mb-0">3+</div>
-          <div class="small-muted">Projects</div>
+  <main id="main-content">
+    <section id="home" class="hero">
+      <div class="container text-center" data-aos="fade-up">
+        <img src="./assets/images/yaz-profile.jpg" alt="Dyaz Amrullah" class="avatar mb-4">
+        <h1 class="display-4 fw-light mb-1">Dyaz Amrullah</h1>
+        <p class="lead mb-3"><span id="typed"></span></p>
+        <p class="small-muted mb-3">Recent graduate in Informatics Engineering • BNSP-certified Junior Web Programmer •
+          Back-End Developer</p>
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+          <a href="#portfolio" class="btn btn-primary-custom"><i class="fa-solid fa-briefcase me-2"></i>View My Work</a>
+          <a href="#contact" class="btn btn-outline-light btn-custom"><i class="fa-solid fa-paper-plane me-2"></i>Get in
+            Touch</a>
         </div>
-        <div class="text-center">
-          <div class="h3 mb-0">3.79</div>
-          <div class="small-muted">GPA (UNIKOM)</div>
-        </div>
-        <div class="text-center">
-          <div class="h3 mb-0">BNSP</div>
-          <div class="small-muted">Certified</div>
-        </div>
-      </div>
-    </div>
-  </header>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title text-center">About Me</h2>
-      <div class="section-underline"></div>
-
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-6" data-aos="fade-right">
-          <div class="card-custom p-4">
-            <h5 class="mb-3"><i class="fa-solid fa-user me-2 text-warning"></i>Summary</h5>
-            <p>Recent graduate in Informatics Engineering (GPA 3.79) with a BNSP-certified Junior Web Programmer
-              credential.
-              Strong foundation in web development, specializing in Back-End technologies. Proven experience delivering
-              efficient, scalable, and secure solutions through academic projects and internships. Skilled in
-              collaborating
-              within Agile teams to achieve impactful results.</p>
-            <p class="mb-0 small-muted"><strong>Contact:</strong> +62 821-2727-6562 • dyaz.amrullah@gmail.com</p>
+        <div class="d-flex justify-content-center gap-4 mt-4">
+          <div class="text-center">
+            <div class="h4 mb-0">5+</div>
+            <div class="small-muted">Projects</div>
+          </div>
+          <div class="text-center">
+            <div class="h4 mb-0">3.79</div>
+            <div class="small-muted">GPA (UNIKOM)</div>
+          </div>
+          <div class="text-center">
+            <div class="h4 mb-0">BNSP</div>
+            <div class="small-muted">Certified</div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Core Skills -->
-        <div class="col-lg-6" data-aos="fade-left">
-
-
-          <div class="about-skills">
-            <h5 class="mb-3"><i class="fa-solid fa-code-branch me-2 text-warning"></i>Core Skills</h5>
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">A brief introduction to who I am and what I do.</p>
+        </div>
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="card-custom p-4">
+              <h5 class="mb-3"><i class="fa-solid fa-user-astronaut me-2 text-primary"></i>Summary</h5>
+              <p>Informatics Engineering graduate and Binar Academy Bootcamp alumnus in Back-End JavaScript Web
+                Development,
+                with practical experience from internships and projects. Motivated to advance in software development
+                and product analysis while contributing to impactful technology solutions.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <h5 class="mb-4"><i class="fa-solid fa-code-branch me-2 text-primary"></i>Core Skills</h5>
             <div class="row g-3">
               <div class="col-md-6">
-                <h6><i class="fa-solid fa-code me-1 text-gold"></i> Languages</h6>
-                <p class="small-muted mb-1">HTML, CSS, JavaScript, Java</p>
+                <h6><i class="fa-solid fa-code me-1 text-primary"></i>Programming Languages</h6>
+                <p class="small-muted mb-1">HTML, CSS, JavaScript</p>
               </div>
               <div class="col-md-6">
-                <h6><i class="fa-solid fa-cubes me-1 text-gold"></i> Frameworks</h6>
-                <p class="small-muted mb-1">Node.js, Express.js, Bootstrap</p>
+                <h6><i class="fa-solid fa-cubes me-1 text-primary"></i>Frameworks & Libraries</h6>
+                <p class="small-muted mb-1">React.js, Node.js, Express.js, Bootstrap 5,
+                  Tailwind CSS</p>
               </div>
               <div class="col-md-6">
-                <h6><i class="fa-solid fa-database me-1 text-gold"></i> Databases</h6>
+                <h6><i class="fa-solid fa-database me-1 text-primary"></i>Databases</h6>
                 <p class="small-muted mb-1">MySQL, PostgreSQL</p>
               </div>
               <div class="col-md-6">
-                <h6><i class="fa-brands fa-git-alt me-1 text-gold"></i> Tools</h6>
-                <p class="small-muted mb-1">Git</p>
+                <h6><i class="fa-brands fa-git-alt me-1 text-primary"></i>Tools</h6>
+                <p class="small-muted mb-1">Git, Docker, Postman</p>
               </div>
               <div class="col-md-6">
-                <h6><i class="fa-solid fa-vial me-1 text-gold"></i> Testing</h6>
-                <p class="small-muted mb-1">Katalon, JMeter, SonarQube, Postman</p>
+                <h6><i class="fa-solid fa-vial me-1 text-primary"></i> Testing Tools</h6>
+                <p class="small-muted mb-1">Katalon, JMeter, SonarQube</p>
               </div>
               <div class="col-md-6">
-                <h6><i class="fa-solid fa-language me-1 text-gold"></i> Languages</h6>
+                <h6><i class="fa-solid fa-language me-1 text-primary"></i>Languages</h6>
                 <p class="small-muted mb-1">English, Indonesia</p>
               </div>
               <div class="col-md-6">
-                <h6><i class="fa-solid fa-file-word me-1 text-gold"></i> Other</h6>
+                <h6><i class="fa-solid fa-file-word me-1 text-primary"></i>Other</h6>
                 <p class="small-muted mb-0">Microsoft Office</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section">
-    <div class="container">
-      <h2 class="section-title text-center">Work Experience</h2>
-      <div class="section-underline"></div>
-
-      <div class="row g-4">
-        <div class="col-md-6" data-aos="fade-up">
-          <div class="card-custom p-4 h-100">
-            <h5 class="mb-2"><i class="fa-solid fa-building me-2 text-warning"></i>Software Quality Assurance Intern
-            </h5>
-            <p class="small-muted mb-1"><strong>PT Dirgantara Indonesia</strong> • Bandung • Dec 2023 – Feb 2024</p>
-            <ul>
-              <li>Crafted & executed 10+ test cases using Katalon & JMeter, leading to identification of critical
-                defects.</li>
-              <li>Collaborated to resolve 25+ defects weekly, improving product quality & user feedback.</li>
-              <li>Implemented SonarQube to reduce code defects by ~25%.</li>
-            </ul>
-          </div>
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Career Journey</h2>
+          <p class="section-subtitle">My professional experience and academic background.</p>
         </div>
-
-        <div class="col-md-6" data-aos="fade-up" data-aos-delay="120">
-          <div class="card-custom p-4 h-100">
-            <h5 class="mb-2"><i class="fa-solid fa-clinic-medical me-2 text-warning"></i>Software Engineer Intern</h5>
-            <p class="small-muted mb-1"><strong>Klinik Jasmine MQ Medika</strong> • Bandung • Aug 2023 – Sep 2023</p>
-            <ul>
-              <li>Engineered employee information system with Node.js, Express.js, PostgreSQL, React.js for 200+
-                employees.</li>
-              <li>Automated payroll using attendance & Excel VBA, reducing manual effort by 30%.</li>
-              <li>Improved onboarding speed by designing tailored software solutions.</li>
-            </ul>
+        <div class="timeline-container">
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card-custom">
+              <div class="timeline-date">Certificate of Competence</div>
+              <h5 class="timeline-title">Junior Web Programmer</h5>
+              <div class="timeline-company">Issued by Indonesian Professional Certification Authority (BNSP)</div>
+              <ul class="mt-2">
+                <li>Valid until March 2027</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card-custom">
+              <div class="timeline-date">Mar 2025 - Aug 2025</div>
+              <h5 class="timeline-title">English Course</h5>
+              <div class="timeline-company">Basic English Course (BEC)</div>
+              <ul class="mt-2">
+                <li>Completed an intensive English program with practical exams including debates, business
+                  presentations, speeches, and conversations with native speakers.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card-custom">
+              <div class="timeline-date">Dec 2023 – Feb 2024</div>
+              <h5 class="timeline-title">Software Quality Assurance Analyst Intern</h5>
+              <div class="timeline-company">PT Dirgantara Indonesia</div>
+              <ul class="mt-2">
+                <li>📌 Executed 10+ test cases using Katalon and JMeter, uncovering critical defects and improving
+                  product reliability.</li>
+                <li>📌 Collaborated with developers to resolve 25+ defects weekly, raising product quality and user
+                  feedback by 15%.</li>
+                <li>📌 Implemented SonarQube for clean code practices, reducing code defects by 25%.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card-custom">
+              <div class="timeline-date">Aug 2023 – Sep 2023</div>
+              <h5 class="timeline-title">Software Engineer Intern</h5>
+              <div class="timeline-company">Klinik Jasmine MQ Medika</div>
+              <ul class="mt-2">
+                <li>📌 Engineered an employee information system that streamlined data access and improved user
+                  experience.</li>
+                <li>📌 Automated payroll processes by integrating attendance data with Excel VBA, reducing manual
+                  efforts by 30%.</li>
+                <li>📌 Developed a software solution that accelerated the HR onboarding process and increased
+                  productivity by 25%.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card-custom">
+              <div class="timeline-date">Sep 2020 - Aug 2024</div>
+              <h5 class="timeline-title">B.Sc. in Informatics Engineering</h5>
+              <div class="timeline-company">Universitas Komputer Indonesia (GPA: 3.79)</div>
+              <ul class="mt-2">
+                <li>Relevant Coursework:</li>
+                <li>Web Development, Database Systems, Software Engineering, Data Mining, Statistics</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card-custom">
+              <div class="timeline-date">Feb 2023 - Jun 2023</div>
+              <h5 class="timeline-title">Back-End JavaScript Web Development</h5>
+              <div class="timeline-company">Binar Academy Bootcamp x Kampus Merdeka Batch 4</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title text-center">Selected Projects</h2>
-      <div class="section-underline"></div>
-      <div id="projects-grid" class="row g-4">
-
-        <div class="col-md-4" data-aos="zoom-in">
-          <div class="card-custom p-4 h-100">
-            <div class="d-flex align-items-center mb-2">
-              <i class="fa-solid fa-diagram-project me-2 text-warning"></i>
-              <h5 class="project-title mb-0">Payroll Management System</h5>
-            </div>
-            <p class="small-muted mb-2">Developed an employee payroll information system designed to streamline salary
-              management and reporting for HR departments. The system improved efficiency by automating manual
-              processes.</p>
-            <div class="mb-3"><span class="chip">React.js</span><span class="chip">Bootstrap</span><span
-                class="chip">Express</span><span class="chip">PostgreSQL</span></div>
-            <a class="project-link" href="https://github.com/yazzdev/SI-Penggajian-Jasmine" target="_blank"
-              rel="noopener">View details →</a>
-          </div>
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Activities</h2>
+          <p class="section-subtitle">Organizational involvement and leadership activities.</p>
         </div>
-
-        <div class="col-md-4" data-aos="zoom-in">
-          <div class="card-custom p-4 h-100">
-            <div class="d-flex align-items-center mb-2">
-              <i class="fa-solid fa-diagram-project me-2 text-warning"></i>
-              <h5 class="project-title mb-0">E-Flight Ticket Platform</h5>
+        <div class="timeline-container">
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card-custom">
+              <div class="timeline-date">Sep 2022 - Oct 2023</div>
+              <h5 class="timeline-title">Youth English Society UNIKOM</h5>
+              <div class="timeline-company">Staff of Public Relations</div>
+              <ul class="mt-2">
+                <li>Strengthened English-based organizational events and external relations by 50%</li>
+              </ul>
             </div>
-            <p class="small-muted mb-2">Led the back-end development of a flight search and booking platform, enabling
-              users to browse, book, and manage tickets seamlessly. Focused on building a scalable architecture for
-              reliable transactions.</p>
-            <div class="mb-3"><span class="chip">Node.js</span><span class="chip">Express</span><span
-                class="chip">PostgreSQL</span></div>
-            <a class="project-link" href="https://github.com/Fitrah007/project_akhir" target="_blank"
-              rel="noopener">View
-              details →</a>
           </div>
-        </div>
-
-        <div class="col-md-4" data-aos="zoom-in">
-          <div class="card-custom p-4 h-100">
-            <div class="d-flex align-items-center mb-2">
-              <i class="fa-solid fa-diagram-project me-2 text-warning"></i>
-              <h5 class="project-title mb-0">Production Management API</h5>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card-custom">
+              <div class="timeline-date">Sep 2022 – Oct 2023</div>
+              <h5 class="timeline-title">HIPMA UNIKOM</h5>
+              <div class="timeline-company">Staff of Business Network & External Relations</div>
+              <ul class="mt-2">
+                <li>Enhanced organizational partnerships by 70%</li>
+              </ul>
             </div>
-            <p class="small-muted mb-2">Built a management API for manufacturing operations that supported real-time
-              notifications and streamlined data flow. Enhanced team productivity by centralizing critical production
-              data.</p>
-            <div class="mb-3"><span class="chip">Node.js</span><span class="chip">Express</span><span
-                class="chip">PostgreSQL</span>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card-custom">
+              <div class="timeline-date">Sep 2021 – Oct 2022</div>
+              <h5 class="timeline-title">HIPMA UNIKOM</h5>
+              <div class="timeline-company">Staff of Media & Information</div>
+              <ul class="mt-2">
+                <li>Improved event promotion by 60%</li>
+              </ul>
             </div>
-            <a class="project-link" href="https://github.com/yazzdev/Product-Management" target="_blank"
-              rel="noopener">View
-              details →</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- EDUCATION -->
-  <section id="education" class="section">
-    <div class="container">
-      <h2 class="section-title text-center">Education</h2>
-      <div class="section-underline"></div>
-      <div class="row g-4">
-
-        <!-- UNIKOM -->
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card-custom p-4 h-100">
-            <h5><i class="fa-solid fa-graduation-cap me-2 text-warning"></i>Universitas Komputer Indonesia (UNIKOM)</h5>
-            <p class="small-muted mb-1">Bachelor of Informatics Engineering</p>
-            <p class="small-muted mb-1">Bandung, Indonesia • Sep 2020 – Dec 2024</p>
-            <p class="mb-0">GPA: 3.79</p>
-            <p>Student organizations: UKM HIPMA & UKM YES</p>
-          </div>
+    <section id="portfolio" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">My Projects</h2>
+          <p class="section-subtitle">A selection of projects I've worked on.</p>
         </div>
-
-        <!-- Binar Academy -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card-custom p-4 h-100">
-            <h5><i class="fa-solid fa-laptop-code me-2 text-warning"></i>Binar Academy</h5>
-            <p class="small-muted mb-1">Back-End JavaScript Web Development</p>
-            <p class="small-muted mb-1">Tangerang, Indonesia • Feb 2023 – Jun 2023</p>
-            <p class="mb-0">Key project:</p>
-            <p>E-Flight Ticket Platform (Back-End Team Leader)</p>
-          </div>
+        <div id="portfolio-grid" class="row g-4">
         </div>
-
-        <!-- BEC Pare -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card-custom p-4 h-100">
-            <h5><i class="fa-solid fa-language me-2 text-warning"></i>Basic English Course (BEC)</h5>
-            <p class="small-muted mb-1">Intensive English Course</p>
-            <p class="small-muted mb-0">Pare, Indonesia • Mar 2025 – Aug 2025</p>
-            <p>Intensive program focusing on grammar, vocabulary, speaking, and academic English to strengthen
-              communication skills.</p>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CERTIFICATIONS -->
-  <section id="certifications" class="section">
-    <div class="container">
-      <h2 class="section-title text-center">Certifications</h2>
-      <div class="section-underline"></div>
-      <div class="row g-4 justify-content-center">
-
-        <div class="col-md-6" data-aos="zoom-in">
-          <div class="card-custom p-4 h-100 text-center">
-            <i class="fa-solid fa-certificate fa-2xl mb-3 text-warning"></i>
-            <h5 class="mt-3">Junior Web Programmer</h5>
-            <p class="small-muted m-1">Issued by BNSP</p>
-            <p class="small-muted">Valid until March 2027</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2 class="section-title text-center">Contact</h2>
-      <div class="section-underline"></div>
-
-      <div class="row g-4">
-        <div class="col-lg-6" data-aos="fade-right">
-          <div class="card-custom p-4">
-            <h5 class="mb-3"><i class="fa-solid fa-envelope me-2 text-warning"></i> Say hi</h5>
-            <form id="contactForm" novalidate>
-              <div id="contactAlert" class="d-none mb-3"></div>
-              <div class="mb-3">
-                <input id="name" name="name" class="form-control" placeholder="Your Name" required>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title text-center">Other Projects</h2>
+        <div class="section-underline"></div>
+        <div id="portfolio-grid" class="row g-4">
+    
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="card-custom p-4 h-100">
+              <div class="d-flex mb-2">
+                <i class="fa-solid fa-diagram-project me-2 text-primary"></i>
+                <h5 class="mb-0">Payroll Management System</h5>
               </div>
-              <div class="mb-3">
-                <input id="email" name="email" type="email" class="form-control" placeholder="Your Email" required>
+              <p class="small-muted mb-2">Developed an employee payroll information system designed to streamline salary
+                management and reporting for HR departments. The system improved efficiency by automating manual
+                processes.</p>
+              <div class="mb-3"><span class="chip">React.js</span><span class="chip">Bootstrap</span><span
+                  class="chip">Express</span><span class="chip">PostgreSQL</span></div>
+              <a class="project-link" href="https://github.com/yazzdev/SI-Penggajian-Jasmine" target="_blank"
+                rel="noopener">View details →</a>
+            </div>
+          </div>
+    
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="card-custom p-4 h-100">
+              <div class="d-flex mb-2">
+                <i class="fa-solid fa-diagram-project me-2 text-primary"></i>
+                <h5 class="mb-0">E-Flight Ticket Platform</h5>
               </div>
-              <div class="mb-3">
-                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Your Message"
-                  required></textarea>
+              <p class="small-muted mb-2">Led the back-end development of a flight search and booking platform, enabling
+                users to browse, book, and manage tickets seamlessly. Focused on building a scalable architecture for
+                reliable transactions.</p>
+              <div class="mb-3"><span class="chip">Node.js</span><span class="chip">Express</span><span
+                  class="chip">PostgreSQL</span></div>
+              <a class="project-link" href="https://github.com/Fitrah007/project_akhir" target="_blank" rel="noopener">View
+                details →</a>
+            </div>
+          </div>
+    
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="card-custom p-4 h-100">
+              <div class="d-flex mb-2">
+                <i class="fa-solid fa-diagram-project me-2 text-primary"></i>
+                <h5 class="mb-0">Production Management API</h5>
               </div>
-              <button class="btn btn-gold" type="submit"><i class="fa-solid fa-paper-plane me-2"></i>Send
-                Message</button>
-            </form>
+              <p class="small-muted mb-2">Built a management API for manufacturing operations that supported real-time
+                notifications and streamlined data flow. Enhanced team productivity by centralizing critical production
+                data.</p>
+              <div class="mb-3"><span class="chip">Node.js</span><span class="chip">Express</span><span
+                  class="chip">PostgreSQL</span>
+              </div>
+              <a class="project-link" href="https://github.com/yazzdev/Product-Management" target="_blank"
+                rel="noopener">View
+                details →</a>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="col-lg-6" data-aos="fade-left">
-          <div class="card-custom p-4">
-            <h5 class="mb-3"><i class="fa-solid fa-id-card me-2 text-warning"></i>Contact Info</h5>
-            <ul class="list-unstyled small-muted mb-3">
-              <li class="mb-2"><i class="fa-solid fa-location-dot me-2 text-warning"></i>Pandeglang, Banten, Indonesia
-              </li>
-              <li class="mb-2"><i class="fa-solid fa-phone me-2 text-warning"></i>+62 821-2727-6562</li>
-              <li class="mb-2"><i class="fa-solid fa-envelope me-2 text-warning"></i>dyaz.amrullah@gmail.com</li>
-              <li class="mb-2"><i class="fa-brands fa-linkedin me-2 text-warning"></i><a class="project-link"
-                  href="https://linkedin.com/in/dyaz-amrullah" target="_blank">linkedin.com/in/dyaz-amrullah</a></li>
-              <li class="mb-2"><i class="fa-brands fa-github me-2 text-warning"></i><a class="project-link"
-                  href="https://github.com/yazzdev" target="_blank">github.com/yazzdev</a></li>
-            </ul>
-            <p class="small-muted mb-0">Open for freelance, collaboration, or full-time opportunities.</p>
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">Have a project in mind or just want to say hi? Feel free to reach out.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-7" data-aos="fade-right">
+            <div class="card-custom p-4">
+              <form id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6"><input id="name" class="form-control" placeholder="Your Name" required></div>
+                  <div class="col-md-6"><input id="email" type="email" class="form-control" placeholder="Your Email"
+                      required></div>
+                  <div class="col-12"><textarea id="message" class="form-control" rows="5" placeholder="Your Message"
+                      required></textarea></div>
+                  <div class="col-12"><button class="btn btn-primary-custom w-100" type="submit"><i
+                        class="fa-solid fa-paper-plane me-2"></i>Send Message</button></div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-5" data-aos="fade-left">
+            <div class="card-custom p-4 h-100 d-flex flex-column justify-content-center">
+              <ul class="list-unstyled contact-info">
+                <h5 class="mb-4">Contact Info</h5>
+                <li><i class="fa-solid fa-location-dot"></i> <span>Pandeglang, Banten, Indonesia</span></li>
+                <li><i class="fa-solid fa-envelope"></i> <a
+                    href="mailto:dyaz.amrullah@gmail.com">dyaz.amrullah@gmail.com</a></li>
+                <li><i class="fa-solid fa-phone"></i> <a
+                    href="https://wa.me/6282127276562?text=Hello%20Dyaz,%20I%20saw%20your%20CV%20and%20would%20like%20to%20connect%20with%20you."
+                    target="_blank">+62 821-2727-6562</a></li>
+              </ul>
+              <div class="social-links mt-2">
+                <a href="https://github.com/yazzdev" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/dyaz-amrullah" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/dyaz.io" target="_blank"><i class="fab fa-instagram"></i></a>
+                <p class="mt-2">Open for freelance, collaboration, or full-time opportunities.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Contact Error Modal -->
-    <div class="modal fade" id="errorModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content text-center p-4">
-          <i class="fa-solid fa-circle-xmark fa-3x text-danger mb-3"></i>
-          <h5 class="mb-2">Oops!</h5>
-          <p class="text-dark">Please make sure all fields are filled correctly before sending.</p>
-          <button type="button" class="btn btn-gold mt-2" data-bs-dismiss="modal">Close</button>
+      <!-- Contact Error Modal -->
+      <div class="modal fade" id="errorModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content text-center p-4">
+            <i class="fa-solid fa-circle-xmark fa-3x text-danger mb-3"></i>
+            <h5 class="mb-2">Oops!</h5>
+            <p class="text-light">Please make sure all fields are filled correctly before sending.</p>
+            <button type="button" class="btn btn btn-primary-custom w-100 mt-2" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Contact Success Modal -->
-    <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content text-center p-4">
-          <i class="fa-solid fa-circle-check fa-3x text-success mb-3"></i>
-          <h5 class="mb-2">Thank You!</h5>
-          <p class="small-muted">Your message has been prepared in your email client.
-            Please check and send it directly.</p>
-          <button type="button" class="btn btn-gold mt-2" data-bs-dismiss="modal">Close</button>
+      <!-- Contact Success Modal -->
+      <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content text-center p-4">
+            <i class="fa-solid fa-circle-check fa-3x text-success mb-3"></i>
+            <h5 class="mb-2">Thank You!</h5>
+            <p class="small-muted">Your message has been prepared in your email client.
+              Please check and send it directly.</p>
+            <button type="button" class="btn btn btn-primary-custom w-100 mt-2" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- FOOTER -->
   <footer>
-    <div class="container d-flex flex-wrap justify-content-between align-items-center">
-      <span>© 2025 yazDev</span>
-      <span class="small-muted">Turning ideas into clean code and impactful solutions.</span>
-    </div>
+    <div class="container">&copy; 2025 yazDev. Turning ideas into clean code and impactful solutions.</div>
   </footer>
 
-  <!-- SCRIPTS -->
+  <div class="modal fade" id="portfolioModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="portfolioModalLabel"></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-4">
+            <div class="col-lg-7">
+              <div class="portfolio-gallery">
+                <div class="main-image-viewport mb-3">
+                  <img id="main-image" src="" alt="Main project view" class="img-fluid">
+                </div>
+                <div id="image-details-container">
+                  <h6 id="image-title" class="text-light fw-bold"></h6>
+                  <p id="image-description" class="small text-medium mb-2"></p>
+                </div>
+                <div id="thumbnail-container" class="thumbnail-container">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div id="portfolio-details">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios@1.7.2/dist/axios.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="./assets/js/script.js"></script>
