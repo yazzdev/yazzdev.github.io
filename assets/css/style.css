@@ -1,6 +1,6 @@
 /*
   Theme: Galaxy Startup
-  Author: yazDev (Upgraded by AI)
+  Author: yazDev (Upgraded by AI & Polished)
 */
 
 :root {
@@ -28,18 +28,79 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-medium);
   overflow-x: hidden;
+  cursor: default;
 }
 h1, h2, h3, h4, h5, h6 { color: var(--text-light); font-weight: 600; }
 a { color: var(--primary); text-decoration: none; transition: color 0.3s; }
 a:hover { color: var(--primary-light); }
 
-/* ANIMATED STAR BACKGROUND */
-.stars-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
-@keyframes animStar { from { transform: translateY(0px); } to { transform: translateY(-2000px); } }
-#stars, #stars2, #stars3 { position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; display: block; }
-#stars { background: transparent url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png') repeat top center; z-index: 0; animation: animStar 50s linear infinite; }
-#stars2 { background: transparent url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png') repeat top center; z-index: 1; animation: animStar 100s linear infinite; }
-#stars3 { background: transparent url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds.png') repeat top center; z-index: 2; animation: animStar 150s linear infinite; }
+/* NEW: CURSOR GLOW EFFECT */
+.cursor-glow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--glow-color) 0%, transparent 70%);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: opacity 0.3s ease-out;
+    opacity: 0;
+}
+body:hover .cursor-glow {
+    opacity: 1;
+}
+
+
+/* NEW: PURE CSS PARALLAX STAR BACKGROUND */
+.stars-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; transform: rotateZ(45deg); }
+@keyframes animStar { from { transform: translateY(0); } to { transform: translateY(-2000px); } }
+
+#stars, #stars2, #stars3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/* Helper function for Sass to generate random stars */
+/* @function random_range($min, $max) { @return random() * ($max - $min) + $min; }
+   @function multiple-box-shadow($n) {
+     $value: '#{random_range(0, 2000)}px #{random_range(0, 2000)}px #FFF';
+     @for $i from 2 through $n {
+       $value: '#{$value} , #{random_range(0, 2000)}px #{random_range(0, 2000)}px #FFF';
+     } @return unquote($value);
+   }
+   $shadows-small:  multiple-box-shadow(700);
+   $shadows-medium: multiple-box-shadow(200);
+   $shadows-large:  multiple-box-shadow(100);
+*/
+
+#stars {
+    width: 1px; height: 1px; background: transparent;
+    box-shadow: /* Generated shadows here */; /* SASS generated 700 small stars */
+    animation: animStar 150s linear infinite;
+}
+#stars2 {
+    width: 2px; height: 2px; background: transparent;
+    box-shadow: /* Generated shadows here */; /* SASS generated 200 medium stars */
+    animation: animStar 100s linear infinite;
+}
+#stars3 {
+    width: 3px; height: 3px; background: transparent;
+    box-shadow: /* Generated shadows here */; /* SASS generated 100 large stars */
+    animation: animStar 50s linear infinite;
+}
+/* NOTE: The box-shadow values are too long to paste here. You'd use a SASS/SCSS preprocessor to generate them. For a quick fix, you can find online generators for "CSS box-shadow stars". */
+/* Placeholder for quick use (less stars) */
+#stars { box-shadow: 10px 815px #FFF, 1276px 1238px #FFF, 1856px 873px #FFF, 1940px 1483px #FFF, 411px 710px #FFF, 1421px 1195px #FFF, 1109px 1293px #FFF, 1599px 1113px #FFF, 887px 1133px #FFF, 143px 1864px #FFF, 1195px 632px #FFF, 73px 1852px #FFF, 1008px 612px #FFF, 112px 142px #FFF, 1166px 1866px #FFF, 1475px 827px #FFF, 115px 1200px #FFF, 542px 1235px #FFF, 1205px 146px #FFF, 1284px 1017px #FFF, 1374px 1729px #FFF, 1131px 1978px #FFF, 1222px 1335px #FFF, 246px 1438px #FFF, 1928px 1215px #FFF, 22px 1461px #FFF, 110px 1089px #FFF, 613px 1190px #FFF, 1290px 1117px #FFF, 1489px 1932px #FFF; animation: animStar 150s linear infinite; width: 1px; height: 1px; background: transparent;}
+#stars2 { box-shadow: 1591px 528px #FFF, 938px 1063px #FFF, 75px 1130px #FFF, 1869px 956px #FFF, 1116px 1604px #FFF, 482px 137px #FFF, 234px 1738px #FFF, 1146px 1665px #FFF, 1664px 621px #FFF, 1495px 1774px #FFF, 1584px 1807px #FFF, 1330px 1279px #FFF, 1149px 1361px #FFF, 1181px 1197px #FFF, 111px 1138px #FFF, 123px 1231px #FFF, 1690px 1658px #FFF, 451px 1334px #FFF, 1152px 66px #FFF, 1716px 1210px #FFF, 1135px 1878px #FFF, 989px 1261px #FFF, 115px 188px #FFF, 1528px 432px #FFF; animation: animStar 100s linear infinite; width: 2px; height: 2px; background: transparent;}
+#stars3 { box-shadow: 1024px 746px #FFF, 172px 109px #FFF, 1855px 1209px #FFF, 1431px 1563px #FFF, 1389px 1073px #FFF, 701px 1258px #FFF, 103px 1020px #FFF, 715px 1014px #FFF, 1402px 1056px #FFF, 1251px 1220px #FFF, 1618px 1669px #FFF, 1121px 410px #FFF, 193px 1882px #FFF, 1629px 1891px #FFF, 1205px 632px #FFF, 999px 1098px #FFF, 1211px 1500px #FFF, 1559px 1014px #FFF, 1503px 1750px #FFF, 1071px 953px #FFF; animation: animStar 50s linear infinite; width: 3px; height: 3px; background: transparent;}
 
 /* NAVBAR */
 .navbar {
@@ -80,15 +141,21 @@ a:hover { color: var(--primary-light); }
 .section-title { font-size: 2.5rem; font-weight: 700; }
 .section-subtitle { font-size: 1.1rem; color: var(--text-medium); }
 
-/* BUTTONS */
-.btn { border-radius: 50px; padding: 12px 30px; font-weight: 600; transition: all 0.3s; }
+/* BUTTONS with NEW Gradient Animation */
+.btn { border-radius: 50px; padding: 12px 30px; font-weight: 600; transition: all 0.4s ease; }
 .btn-primary-custom {
-    background: linear-gradient(45deg, var(--primary), var(--primary-light));
+    background: linear-gradient(45deg, var(--primary), var(--primary-light), var(--primary));
     color: var(--text-light);
     border: none;
     box-shadow: 0 0 20px var(--glow-color);
+    background-size: 200% auto;
+    transition: transform 0.3s, box-shadow 0.3s, background-position 0.5s;
 }
-.btn-primary-custom:hover { transform: translateY(-3px); box-shadow: 0 4px 25px var(--glow-color); }
+.btn-primary-custom:hover {
+    background-position: right center; /* Change the position of the gradient */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 25px var(--glow-color);
+}
 .btn-outline-light.btn-custom { border-color: var(--border-color); color: var(--text-light); }
 .btn-outline-light.btn-custom:hover { background: var(--primary); border-color: var(--primary); }
 
@@ -197,21 +264,43 @@ a:hover { color: var(--primary-light); }
     border-radius: 8px;
 }
 .form-control:focus { background-color: var(--bg-medium); border-color: var(--primary); box-shadow: 0 0 10px var(--glow-color); color: var(--text-light); }
+/* IMPROVED: Placeholder contrast */
+.form-control::placeholder { color: var(--text-dark); opacity: 1; }
 
-/* MODAL */
+/* MODAL ENHANCEMENTS */
 .modal-content { background: var(--bg-medium); border: 1px solid var(--border-color); }
 .modal-header { border-bottom: 1px solid var(--border-color); }
-.main-image { border-radius: 10px; border: 1px solid var(--border-color); }
-.thumbnail-container { display: flex; gap: 10px; overflow-x: auto; }
-.thumbnail { width: 100px; height: 70px; object-fit: cover; border-radius: 5px; cursor: pointer; border: 2px solid transparent; transition: border-color 0.3s; }
-.thumbnail.active, .thumbnail:hover { border-color: var(--primary); }
+
+/* NEW: Scrollable image viewport */
+.main-image-viewport {
+    max-height: 400px; /* Adjust as needed */
+    overflow-y: auto;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+.main-image-viewport img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.thumbnail-container { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 10px; }
+.thumbnail { width: 100px; height: 70px; object-fit: cover; border-radius: 5px; cursor: pointer; border: 2px solid transparent; transition: border-color 0.3s; opacity: 0.7; }
+.thumbnail.active, .thumbnail:hover { border-color: var(--primary); opacity: 1; }
+
 #portfolio-details h3 { color: var(--primary-light); }
 #portfolio-details .tech-stack span {
   background: rgba(79, 70, 229, 0.2); color: var(--primary-light);
   padding: 5px 12px; border-radius: 5px; font-size: 0.8rem;
   display: inline-block; margin: 3px;
 }
-#portfolio-details .list-group-item { background: transparent; border-color: var(--border-color); padding-left: 0; }
+/* IMPROVED: Key feature text contrast */
+#portfolio-details .list-group-item {
+    background: transparent;
+    border-color: var(--border-color);
+    padding-left: 0;
+    color: var(--text-medium); /* Ensure readability */
+}
 #portfolio-details .list-group-item i { color: var(--primary); margin-right: 10px; }
 
 /* FOOTER */
@@ -224,4 +313,4 @@ footer { padding: 20px 0; text-align: center; background: var(--bg-dark); border
   .timeline-item:nth-child(even) { left: 0; }
   .timeline-item:nth-child(odd) .timeline-content, .timeline-item:nth-child(even) .timeline-content { text-align: left; }
   .timeline-dot { left: 0px; }
-} 
+}
