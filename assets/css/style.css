@@ -1,6 +1,6 @@
 /*
   Theme: Galaxy Startup
-  Author: yazDev (Upgraded by AI & Polished)
+  Author: yazDev
 */
 
 :root {
@@ -51,6 +51,10 @@ a:hover { color: var(--primary-light); }
 }
 body:hover .cursor-glow {
     opacity: 1;
+}
+
+.my-logo {
+  width:120px; height:auto;
 }
 
 
@@ -182,19 +186,8 @@ body:hover .cursor-glow {
 .card-custom:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
 .card-custom:hover::before { opacity: 0.1; }
 
-/* ABOUT SECTION */
-.skills-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
-.skill-item {
-    background: rgba(255,255,255,0.05);
-    padding: 10px 15px;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    font-size: 0.9rem;
-}
-.skill-item span { font-weight: 600; color: var(--text-light); }
-
 /* TIMELINE */
-.timeline-container { position: relative; max-width: 900px; margin: 0 auto; }
+.timeline-container { position: relative; max-width: 1000px; margin: 0 auto; }
 .timeline-container::after {
   content: '';
   position: absolute;
@@ -242,6 +235,24 @@ body:hover .cursor-glow {
   margin-right: 5px;
 }
 
+.chip {
+  display: inline-block;
+  background: rgba(79, 70, 229, 0.2);
+  color: var(--primary-light);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  margin-right: 5px;
+}
+
+.section-underline {
+  width: 72px;
+  height: 4px;
+  background: var(--primary-light);
+  margin: 0 auto 42px;
+  border-radius: 3px;
+}
+
 /* CONTACT */
 .contact-info li { display: flex; align-items: center; margin-bottom: 1rem; }
 .contact-info i {
@@ -273,7 +284,7 @@ body:hover .cursor-glow {
 
 /* NEW: Scrollable image viewport */
 .main-image-viewport {
-    max-height: 400px; /* Adjust as needed */
+    max-height: 380px; /* Adjust as needed */
     overflow-y: auto;
     border-radius: 10px;
     border: 1px solid var(--border-color);

@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>yazDev — Dyaz Amrullah</title>
+  <title>Dyaz Amrullah</title>
+  <link rel="icon" type="image/png" href="./assets/images/my-logo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -23,7 +24,7 @@
 
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#home"><i class="fa-solid fa-rocket me-2"></i>yazDev</a>
+      <a class="navbar-brand" href="#home"><img src="./assets/images/my-horizontal-logo.png" alt="My Horizontal Logo" class="my-logo me-2"></a>
       <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
         <i class="fa-solid fa-bars"></i>
       </button>
@@ -35,7 +36,7 @@
           <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-            <a class="btn btn-primary-custom btn-sm" href="#" target="_blank">
+            <a class="btn btn-primary-custom btn-sm" href="./assets/files/Resume_Dyaz_Amrullah.pdf" target="_blank">
               <i class="fa-solid fa-file-pdf me-1"></i>Download CV
             </a>
           </li>
@@ -48,12 +49,29 @@
     <section id="home" class="hero">
       <div class="container text-center" data-aos="fade-up">
         <img src="./assets/images/yaz-profile.jpg" alt="Dyaz Amrullah" class="avatar mb-4">
-        <h1 class="display-4 fw-bold mb-1">Dyaz Amrullah</h1>
+        <h1 class="display-4 fw-light mb-1">Dyaz Amrullah</h1>
         <p class="lead mb-3"><span id="typed"></span></p>
+        <p class="small-muted mb-3">Recent graduate in Informatics Engineering • BNSP-certified Junior Web Programmer •
+          Back-End Developer</p>
         <div class="d-flex justify-content-center flex-wrap gap-3">
           <a href="#portfolio" class="btn btn-primary-custom"><i class="fa-solid fa-briefcase me-2"></i>View My Work</a>
           <a href="#contact" class="btn btn-outline-light btn-custom"><i class="fa-solid fa-paper-plane me-2"></i>Get in
             Touch</a>
+        </div>
+
+        <div class="d-flex justify-content-center gap-4 mt-4">
+          <div class="text-center">
+            <div class="h4 mb-0">5+</div>
+            <div class="small-muted">Projects</div>
+          </div>
+          <div class="text-center">
+            <div class="h4 mb-0">3.79</div>
+            <div class="small-muted">GPA (UNIKOM)</div>
+          </div>
+          <div class="text-center">
+            <div class="h4 mb-0">BNSP</div>
+            <div class="small-muted">Certified</div>
+          </div>
         </div>
       </div>
     </section>
@@ -75,15 +93,37 @@
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-left">
-            <h5 class="mb-3"><i class="fa-solid fa-cogs me-2 text-primary"></i>Core Skills</h5>
-            <div class="skills-grid">
-              <div class="skill-item"><span>Programming Languages :</span> HTML, CSS, JavaScript</div>
-              <div class="skill-item"><span>Frameworks & Libraries :</span> React.js, Node.js, Express.js, Bootstrap 5,
-                Tailwind CSS</div>
-              <div class="skill-item"><span>Databases:</span> MySQL, PostgreSQL</div>
-              <div class="skill-item"><span>Tools:</span> Git, Docker, Postman</div>
-              <div class="skill-item"><span>Testing Tools:</span> Katalon, JMeter, SonarQube</div>
-              <div class="skill-item"><span>Languages:</span> English, Indonesia</div>
+            <h5 class="mb-4"><i class="fa-solid fa-code-branch me-2 text-primary"></i>Core Skills</h5>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <h6><i class="fa-solid fa-code me-1 text-primary"></i>Programming Languages</h6>
+                <p class="small-muted mb-1">HTML, CSS, JavaScript</p>
+              </div>
+              <div class="col-md-6">
+                <h6><i class="fa-solid fa-cubes me-1 text-primary"></i>Frameworks & Libraries</h6>
+                <p class="small-muted mb-1">React.js, Node.js, Express.js, Bootstrap 5,
+                  Tailwind CSS</p>
+              </div>
+              <div class="col-md-6">
+                <h6><i class="fa-solid fa-database me-1 text-primary"></i>Databases</h6>
+                <p class="small-muted mb-1">MySQL, PostgreSQL</p>
+              </div>
+              <div class="col-md-6">
+                <h6><i class="fa-brands fa-git-alt me-1 text-primary"></i>Tools</h6>
+                <p class="small-muted mb-1">Git, Docker, Postman</p>
+              </div>
+              <div class="col-md-6">
+                <h6><i class="fa-solid fa-vial me-1 text-primary"></i> Testing Tools</h6>
+                <p class="small-muted mb-1">Katalon, JMeter, SonarQube</p>
+              </div>
+              <div class="col-md-6">
+                <h6><i class="fa-solid fa-language me-1 text-primary"></i>Languages</h6>
+                <p class="small-muted mb-1">English, Indonesia</p>
+              </div>
+              <div class="col-md-6">
+                <h6><i class="fa-solid fa-file-word me-1 text-primary"></i>Other</h6>
+                <p class="small-muted mb-0">Microsoft Office</p>
+              </div>
             </div>
           </div>
         </div>
@@ -97,6 +137,29 @@
           <p class="section-subtitle">My professional experience and academic background.</p>
         </div>
         <div class="timeline-container">
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card-custom">
+              <div class="timeline-date">Certificate of Competence</div>
+              <h5 class="timeline-title">Junior Web Programmer</h5>
+              <div class="timeline-company">Issued by Indonesian Professional Certification Authority (BNSP)</div>
+              <ul class="mt-2">
+                <li>Valid until March 2027</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card-custom">
+              <div class="timeline-date">Mar 2025 - Aug 2025</div>
+              <h5 class="timeline-title">English Course</h5>
+              <div class="timeline-company">Basic English Course (BEC)</div>
+              <ul class="mt-2">
+                <li>Completed an intensive English program with practical exams including debates, business
+                  presentations, speeches, and conversations with native speakers.</li>
+              </ul>
+            </div>
+          </div>
           <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
             <div class="timeline-dot"></div>
             <div class="timeline-content card-custom">
@@ -152,6 +215,50 @@
       </div>
     </section>
 
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Activities</h2>
+          <p class="section-subtitle">Organizational involvement and leadership activities.</p>
+        </div>
+        <div class="timeline-container">
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card-custom">
+              <div class="timeline-date">Sep 2022 - Oct 2023</div>
+              <h5 class="timeline-title">Youth English Society UNIKOM</h5>
+              <div class="timeline-company">Staff of Public Relations</div>
+              <ul class="mt-2">
+                <li>Strengthened English-based organizational events and external relations by 50%</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card-custom">
+              <div class="timeline-date">Sep 2022 – Oct 2023</div>
+              <h5 class="timeline-title">HIPMA UNIKOM</h5>
+              <div class="timeline-company">Staff of Business Network & External Relations</div>
+              <ul class="mt-2">
+                <li>Enhanced organizational partnerships by 70%</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card-custom">
+              <div class="timeline-date">Sep 2021 – Oct 2022</div>
+              <h5 class="timeline-title">HIPMA UNIKOM</h5>
+              <div class="timeline-company">Staff of Media & Information</div>
+              <ul class="mt-2">
+                <li>Improved event promotion by 60%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="portfolio" class="section">
       <div class="container">
         <div class="section-header" data-aos="fade-up">
@@ -159,6 +266,65 @@
           <p class="section-subtitle">A selection of projects I've worked on.</p>
         </div>
         <div id="portfolio-grid" class="row g-4">
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title text-center">Other Projects</h2>
+        <div class="section-underline"></div>
+        <div id="portfolio-grid" class="row g-4">
+    
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="card-custom p-4 h-100">
+              <div class="d-flex mb-2">
+                <i class="fa-solid fa-diagram-project me-2 text-primary"></i>
+                <h5 class="mb-0">Payroll Management System</h5>
+              </div>
+              <p class="small-muted mb-2">Developed an employee payroll information system designed to streamline salary
+                management and reporting for HR departments. The system improved efficiency by automating manual
+                processes.</p>
+              <div class="mb-3"><span class="chip">React.js</span><span class="chip">Bootstrap</span><span
+                  class="chip">Express</span><span class="chip">PostgreSQL</span></div>
+              <a class="project-link" href="https://github.com/yazzdev/SI-Penggajian-Jasmine" target="_blank"
+                rel="noopener">View details →</a>
+            </div>
+          </div>
+    
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="card-custom p-4 h-100">
+              <div class="d-flex mb-2">
+                <i class="fa-solid fa-diagram-project me-2 text-primary"></i>
+                <h5 class="mb-0">E-Flight Ticket Platform</h5>
+              </div>
+              <p class="small-muted mb-2">Led the back-end development of a flight search and booking platform, enabling
+                users to browse, book, and manage tickets seamlessly. Focused on building a scalable architecture for
+                reliable transactions.</p>
+              <div class="mb-3"><span class="chip">Node.js</span><span class="chip">Express</span><span
+                  class="chip">PostgreSQL</span></div>
+              <a class="project-link" href="https://github.com/Fitrah007/project_akhir" target="_blank" rel="noopener">View
+                details →</a>
+            </div>
+          </div>
+    
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="card-custom p-4 h-100">
+              <div class="d-flex mb-2">
+                <i class="fa-solid fa-diagram-project me-2 text-primary"></i>
+                <h5 class="mb-0">Production Management API</h5>
+              </div>
+              <p class="small-muted mb-2">Built a management API for manufacturing operations that supported real-time
+                notifications and streamlined data flow. Enhanced team productivity by centralizing critical production
+                data.</p>
+              <div class="mb-3"><span class="chip">Node.js</span><span class="chip">Express</span><span
+                  class="chip">PostgreSQL</span>
+              </div>
+              <a class="project-link" href="https://github.com/yazzdev/Product-Management" target="_blank"
+                rel="noopener">View
+                details →</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -188,16 +354,45 @@
           <div class="col-lg-5" data-aos="fade-left">
             <div class="card-custom p-4 h-100 d-flex flex-column justify-content-center">
               <ul class="list-unstyled contact-info">
+                <h5 class="mb-4">Contact Info</h5>
                 <li><i class="fa-solid fa-location-dot"></i> <span>Pandeglang, Banten, Indonesia</span></li>
                 <li><i class="fa-solid fa-envelope"></i> <a
                     href="mailto:dyaz.amrullah@gmail.com">dyaz.amrullah@gmail.com</a></li>
-                <li><i class="fa-solid fa-phone"></i> <a href="tel:+6282127276562">+62 821-2727-6562</a></li>
+                <li><i class="fa-solid fa-phone"></i> <a
+                    href="https://wa.me/6282127276562?text=Hello%20Dyaz,%20I%20saw%20your%20CV%20and%20would%20like%20to%20connect%20with%20you."
+                    target="_blank">+62 821-2727-6562</a></li>
               </ul>
-              <div class="social-links mt-3">
+              <div class="social-links mt-2">
                 <a href="https://github.com/yazzdev" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com/in/dyaz-amrullah" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/dyaz.io" target="_blank"><i class="fab fa-instagram"></i></a>
+                <p class="mt-2">Open for freelance, collaboration, or full-time opportunities.</p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contact Error Modal -->
+      <div class="modal fade" id="errorModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content text-center p-4">
+            <i class="fa-solid fa-circle-xmark fa-3x text-danger mb-3"></i>
+            <h5 class="mb-2">Oops!</h5>
+            <p class="text-light">Please make sure all fields are filled correctly before sending.</p>
+            <button type="button" class="btn btn btn-primary-custom w-100 mt-2" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Success Modal -->
+      <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content text-center p-4">
+            <i class="fa-solid fa-circle-check fa-3x text-success mb-3"></i>
+            <h5 class="mb-2">Thank You!</h5>
+            <p class="small-muted">Your message has been prepared in your email client.
+              Please check and send it directly.</p>
+            <button type="button" class="btn btn btn-primary-custom w-100 mt-2" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>

@@ -7,22 +7,22 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "A comprehensive payroll information system designed to streamline salary management and reporting for HR departments. This system automates manual processes, improving efficiency and accuracy.",
       thumbnails: [
         {
-          src: "./assets/images/payroll-main.png",
+          src: "https://placehold.co/1200x800/10101a/4f46e5?text=Main+View",
           title: "Dashboard Overview",
           description: "Central hub displaying key payroll statistics, recent activities, and quick access to major modules."
         },
         {
-          src: "./assets/images/payroll-1.png",
+          src: "https://placehold.co/1200x700/10101a/4f46e5?text=Screenshot",
           title: "Employee Data Management",
           description: "A detailed view for managing employee information, salary details, and employment history."
         },
         {
-          src: "./assets/images/payroll-2.png",
+          src: "https://placehold.co/1200x700/10101a/4f46e5?text=Screenshot",
           title: "Automated Salary Calculation",
           description: "Interface showing the automated process of calculating salaries based on attendance, deductions, and allowances."
         },
         {
-          src: "./assets/images/payroll-3.png",
+          src: "https://placehold.co/1200x1800/10101a/4f46e5?text=Long+Screenshot",
           title: "Reporting and Analytics",
           description: "Generate and export various financial reports, providing insights into payroll expenses over time."
         }
@@ -43,22 +43,22 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "Led the back-end development of a flight search and booking platform. Focused on building a scalable and reliable RESTful API architecture to handle flight data, user authentication, and transaction processing seamlessly.",
       thumbnails: [
         {
-          src: "./assets/images/flight-main.png",
+          src: "https://placehold.co/1200x800/10101a/4f46e5?text=Main+View",
           title: "API Documentation (Swagger)",
           description: "Clear and interactive API documentation created with Swagger for easy integration and testing by front-end teams."
         },
         {
-          src: "./assets/images/flight-1.png",
+          src: "https://placehold.co/1200x700/10101a/4f46e5?text=Screenshot",
           title: "Database Schema Design",
           description: "ERD diagram illustrating the relational database structure designed for scalability and data integrity."
         },
         {
-          src: "./assets/images/flight-2.png",
+          src: "https://placehold.co/1200x1800/10101a/4f46e5?text=Long+Screenshot",
           title: "Authentication Flow",
           description: "Sequence diagram of the secure JWT-based authentication and authorization process."
         },
         {
-          src: "./assets/images/flight-3.png",
+          src: "https://placehold.co/1200x700/10101a/4f46e5?text=Screenshot",
           title: "Real-time Notification Architecture",
           description: "System design for real-time notifications using WebSockets for booking confirmations and flight updates."
         }
@@ -236,4 +236,36 @@ document.addEventListener("DOMContentLoaded", () => {
       e.target.classList.add('active');
     }
   });
+});
+
+// Contact
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  // Regex sederhana untuk validasi email
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // Validasi input
+  if (!name || !email || !message || !emailPattern.test(email)) {
+    const errorModal = new bootstrap.Modal(document.getElementById("errorModal"));
+    errorModal.show();
+    return;
+  }
+
+  // Template mailto lebih rapi
+  const subject = encodeURIComponent(`[New message] from ${name}`);
+  const body = encodeURIComponent(
+    `Knock knock yazDev,\n\n${message}\n\nBest regards,\n${name}\nEmail: ${email}`
+  );
+
+  // Buka mail client
+  window.location.href = `mailto:dyaz.amrullah@gmail.com?subject=${subject}&body=${body}`;
+
+  // Tampilkan modal success
+  const contactModal = new bootstrap.Modal(document.getElementById("contactModal"));
+  contactModal.show();
 });
