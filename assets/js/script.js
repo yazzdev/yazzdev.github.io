@@ -2,38 +2,53 @@ document.addEventListener("DOMContentLoaded", () => {
   const portfolioData = [
     {
       id: 1,
-      title: "Payroll Management System",
-      tags: ["React", "Express", "PostgreSQL"],
-      description: "A comprehensive payroll information system designed to streamline salary management and reporting for HR departments. This system automates manual processes, improving efficiency and accuracy.",
+      title: "yourfin",
+      tags: ["React", "Bootstrap 5", "Express", "PostgreSQL"],
+      description: "A smart financial management web app that helps users easily track their income, expenses, and spending habits through a clean and interactive dashboard.",
       thumbnails: [
         {
-          src: "https://placehold.co/1200x800/10101a/4f46e5?text=Main+View",
+          src: "/assets/images/yourfin/yourfin-main.png",
           title: "Dashboard Overview",
-          description: "Central hub displaying key payroll statistics, recent activities, and quick access to major modules."
+          description: "A concise introduction to YourFin, showcasing how users can manage their personal finances with insightful visual dashboards."
         },
         {
-          src: "https://placehold.co/1200x700/10101a/4f46e5?text=Screenshot",
-          title: "Employee Data Management",
-          description: "A detailed view for managing employee information, salary details, and employment history."
+          src: "/assets/images/yourfin/yourfin-1.png",
+          title: "Login Page",
+          description: "Secure login interface allowing users to access their personalized financial dashboard using JWT authentication."
         },
         {
-          src: "https://placehold.co/1200x700/10101a/4f46e5?text=Screenshot",
-          title: "Automated Salary Calculation",
-          description: "Interface showing the automated process of calculating salaries based on attendance, deductions, and allowances."
+          src: "/assets/images/yourfin/yourfin-2.png",
+          title: "Register Page",
+          description: "User-friendly registration form that enables new users to create an account and start managing their income and expenses."
         },
         {
-          src: "https://placehold.co/1200x1800/10101a/4f46e5?text=Long+Screenshot",
-          title: "Reporting and Analytics",
-          description: "Generate and export various financial reports, providing insights into payroll expenses over time."
-        }
+          src: "/assets/images/yourfin/yourfin-3.png",
+          title: "Dashboard Analytics",
+          description: "Interactive dashboard displaying income vs expense charts and spending summaries categorized for better financial insights."
+        },
+        {
+          src: "/assets/images/yourfin/yourfin-4.png",
+          title: "Transaction Management",
+          description: "Comprehensive transaction page allowing users to add, edit, filter, and delete income or expense records easily."
+        },
+        {
+          src: "/assets/images/yourfin/yourfin-5.png",
+          title: "Category Management",
+          description: "Simple interface for managing custom categories, enabling users to group and analyze their financial activities effectively."
+        },
+        // {
+        //   src: "https://placehold.co/1200x1800/10101a/4f46e5?text=Long+Screenshot",
+        //   title: "Reporting and Analytics",
+        //   description: "Generate and export various financial reports, providing insights into payroll expenses over time."
+        // }
       ],
       features: [
-        "Automated Payroll Calculation",
-        "Employee Data Management",
-        "Attendance & Leave Tracking",
-        "Secure Role-Based Access"
+        "Secure Authentication with JWT",
+        "Expense & Income Tracking",
+        "Custom Category Management",
+        "Interactive Financial Dashboard"
       ],
-      techStack: ["React.js", "Bootstrap", "Node.js", "Express.js", "PostgreSQL", "JWT"],
+      techStack: ["React.js", "Bootstrap 5", "Node.js", "Express.js", "Recharts", "PostgreSQL", "JWT"],
       links: { github: "https://github.com/yazzdev/SI-Penggajian-Jasmine" }
     },
     {
@@ -183,11 +198,11 @@ document.addEventListener("DOMContentLoaded", () => {
     portfolioModalElement.querySelector('#portfolioModalLabel').textContent = project.title;
 
     // Setel gambar, judul, dan deskripsi default (dari thumbnail pertama)
-    updateModalImage(project.thumbnails[0]);
+    updateModalImage(project.thumbnails[1]);
 
     const thumbnailContainer = portfolioModalElement.querySelector('#thumbnail-container');
-    thumbnailContainer.innerHTML = project.thumbnails.map((thumb, index) =>
-      `<img src="${thumb.src}" alt="${thumb.title}" class="thumbnail ${index === 0 ? 'active' : ''}" data-index="${index}">`
+    thumbnailContainer.innerHTML = project.thumbnails.slice(1).map((thumb, index) =>
+      `<img src="${thumb.src}" alt="${thumb.title}" class="thumbnail ${index === 0 ? 'active' : ''}" data-index="${index + 1}">`
     ).join('');
 
     // Simpan data proyek saat ini di elemen modal untuk referensi
