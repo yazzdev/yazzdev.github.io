@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const portfolioData = [
     {
       id: 1,
-      title: "yourfin",
+      title: "YourFin",
       tags: ["React", "Bootstrap 5", "Express", "PostgreSQL"],
       description: "A smart financial management web app that helps users easily track their income, expenses, and spending habits through a clean and interactive dashboard.",
       thumbnails: [
@@ -12,35 +12,30 @@ document.addEventListener("DOMContentLoaded", () => {
           description: "A concise introduction to YourFin, showcasing how users can manage their personal finances with insightful visual dashboards."
         },
         {
-          src: "/assets/images/yourfin/yourfin-1.png",
+          src: "/assets/images/yourfin/yourfin-login.png",
           title: "Login Page",
           description: "Secure login interface allowing users to access their personalized financial dashboard using JWT authentication."
         },
         {
-          src: "/assets/images/yourfin/yourfin-2.png",
+          src: "/assets/images/yourfin/yourfin-register.png",
           title: "Register Page",
           description: "User-friendly registration form that enables new users to create an account and start managing their income and expenses."
         },
         {
-          src: "/assets/images/yourfin/yourfin-3.png",
+          src: "/assets/images/yourfin/yourfin-dashboard.png",
           title: "Dashboard Analytics",
           description: "Interactive dashboard displaying income vs expense charts and spending summaries categorized for better financial insights."
         },
         {
-          src: "/assets/images/yourfin/yourfin-4.png",
+          src: "/assets/images/yourfin/yourfin-transaction.png",
           title: "Transaction Management",
           description: "Comprehensive transaction page allowing users to add, edit, filter, and delete income or expense records easily."
         },
         {
-          src: "/assets/images/yourfin/yourfin-5.png",
+          src: "/assets/images/yourfin/yourfin-category.png",
           title: "Category Management",
           description: "Simple interface for managing custom categories, enabling users to group and analyze their financial activities effectively."
         },
-        // {
-        //   src: "https://placehold.co/1200x1800/10101a/4f46e5?text=Long+Screenshot",
-        //   title: "Reporting and Analytics",
-        //   description: "Generate and export various financial reports, providing insights into payroll expenses over time."
-        // }
       ],
       features: [
         "Secure Authentication with JWT",
@@ -48,44 +43,85 @@ document.addEventListener("DOMContentLoaded", () => {
         "Custom Category Management",
         "Interactive Financial Dashboard"
       ],
-      techStack: ["React.js", "Bootstrap 5", "Node.js", "Express.js", "Recharts", "PostgreSQL", "JWT"],
-      links: { github: "https://github.com/yazzdev/SI-Penggajian-Jasmine" }
+      techStack: ["React.js", "Bootstrap 5", "Node.js", "Express.js", "Recharts", "PostgreSQL", "JWT", "Sequelize ORM"],
+      links: { github: "https://github.com/yazzdev/yourfin" }
     },
     {
       id: 2,
-      title: "E-Flight Ticket Platform (Back-End)",
-      tags: ["Node.js", "API", "PostgreSQL"],
-      description: "Led the back-end development of a flight search and booking platform. Focused on building a scalable and reliable RESTful API architecture to handle flight data, user authentication, and transaction processing seamlessly.",
+      title: "Lunar Study Station",
+      tags: ["React", "Fastify", "PostgreSQL", "Prisma", "AI"],
+      description:
+        "A calm, futuristic English learning tracker that helps users monitor their study habits, practice skills, and receive instant AI-powered grammar feedback, all within a serene lunar-themed interface.",
       thumbnails: [
         {
-          src: "https://placehold.co/1200x800/10101a/4f46e5?text=Main+View",
-          title: "API Documentation (Swagger)",
-          description: "Clear and interactive API documentation created with Swagger for easy integration and testing by front-end teams."
+          src: "/assets/images/lunar-study/lunar-station-main.png",
+          title: "Dashboard Overview",
+          description:
+            "The main dashboard showcasing user progress, study statistics, and personalized learning summaries in a minimal lunar-inspired UI.",
         },
         {
-          src: "https://placehold.co/1200x700/10101a/4f46e5?text=Screenshot",
-          title: "Database Schema Design",
-          description: "ERD diagram illustrating the relational database structure designed for scalability and data integrity."
+          src: "/assets/images/lunar-study/lunar-station-landing.png",
+          title: "Landing Page",
+          description:
+            "A calm, responsive landing page introducing Lunar Study Station’s features, designed with a soft monochrome palette and gentle animations.",
         },
         {
-          src: "https://placehold.co/1200x1800/10101a/4f46e5?text=Long+Screenshot",
-          title: "Authentication Flow",
-          description: "Sequence diagram of the secure JWT-based authentication and authorization process."
+          src: "/assets/images/lunar-study/lunar-station-login.png",
+          title: "Login Page",
+          description:
+            "Secure and minimal login interface where users can access their personalized study environment.",
         },
         {
-          src: "https://placehold.co/1200x700/10101a/4f46e5?text=Screenshot",
-          title: "Real-time Notification Architecture",
-          description: "System design for real-time notifications using WebSockets for booking confirmations and flight updates."
+          src: "/assets/images/lunar-study/lunar-station-register.png",
+          title: "Register Page",
+          description:
+            "Simple and intuitive registration form for new users to create an account and start their learning journey.",
+        },
+        {
+          src: "/assets/images/lunar-study/lunar-station-dashboard.png",
+          title: "Dashboard",
+          description:
+            "An overview of user activity and skill-based progress visualization, powered by Recharts and real-time updates from the API.",
+        },
+        {
+          src: "/assets/images/lunar-study/lunar-station-logs.png",
+          title: "Study Logs Page",
+          description:
+            "Interactive page for adding and reviewing daily study sessions — includes duration tracking, focus level input, and skill categorization.",
+        },
+        {
+          src: "/assets/images/lunar-study/lunar-station-grammar.png",
+          title: "Grammar Checker",
+          description:
+            "AI-powered grammar correction feature implemented using transformers.js, offering instant feedback for English writing practice.",
+        },
+        {
+          src: "/assets/images/lunar-study/lunar-station-setting.png",
+          title: "Settings Page",
+          description:
+            "A simple settings interface where users can view their personal information and securely log out from the application.",
         }
       ],
       features: [
-        "Real-time Flight Search API",
-        "Secure Booking & Payment Gateway",
-        "User Authentication & Profile Management",
-        "WebSocket-based Notification System"
+        "AI-Powered Grammar Correction",
+        "Daily Study Log Tracking",
+        "Progress Dashboard with Charts and Summaries",
+        "Secure Authentication using JWT",
       ],
-      techStack: ["Node.js", "Express.js", "PostgreSQL", "Swagger", "Socket.io", "JWT"],
-      links: { github: "https://github.com/Fitrah007/project_akhir" }
+      techStack: [
+        "React (Vite)",
+        "Fastify",
+        "PostgreSQL",
+        "Prisma ORM",
+        "Zustand",
+        "TanStack Query",
+        "TailwindCSS",
+        "Recharts",
+        "transformers.js",
+      ],
+      links: {
+        github: "https://github.com/yazzdev/lunar-study-station",
+      },
     },
     {
       id: 3,
@@ -114,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
   AOS.init({ duration: 800, once: true });
   if (document.getElementById("typed")) {
     new Typed("#typed", {
-      strings: ["Full-Stack Developer","Back-End Developer", "API Engineer", "System Architect"],
+      strings: ["Full-Stack Developer", "Back-End Developer", "API Engineer", "System Architect"],
       typeSpeed: 70, backSpeed: 35, loop: true
     });
   }
