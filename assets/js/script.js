@@ -46,8 +46,50 @@ document.addEventListener("DOMContentLoaded", () => {
       techStack: ["React.js", "Bootstrap 5", "Node.js", "Express.js", "Recharts", "PostgreSQL", "JWT", "Sequelize ORM"],
       links: { github: "https://github.com/yazzdev/yourfin" }
     },
+      {
+        "id": 2,
+        "title": "Tugasin",
+        "tags": ["React", "Node.js", "PostgreSQL", "Prisma", "DnD"],
+        "description": "Tugasin is a Trello-like task management web application for efficient project organization. All without requiring authentication and easy board sharing for collaboration.",
+        "thumbnails": [
+          {
+            "src": "/assets/images/tugasin/tugasin-main.png",
+            "title": "Main Board View",
+            "description": "The primary interface displaying multiple columns and draggable task cards."
+          },
+          {
+            "src": "/assets/images/tugasin/tugasin-landing-page.png",
+            "title": "Landing Page",
+            "description": "The landing page allows users to instantly create a project boards without logging in. It can be created with a single click and shared via a unique link."
+          },
+          {
+            "src": "/assets/images/tugasin/tugasin-board.png",
+            "title": "Board Interface",
+            "description": "Within the board interface, users can interact with individual cards in detail. Visual indicators help users distinguish between completed and pending tasks, while contextual buttons allow for moving cards between columns instantly."
+          }
+        ],
+        "features": [
+          "Real-time drag-and-drop movement",
+          "Track task completion with visual status indicators",
+          "Automatic cleanup of inactive boards after 7 days",
+          "No authentication required, easily share links",
+        ],
+        "techStack": [
+          "React.js",
+          "Node.js",
+          "Express.js",
+          "PostgreSQL",
+          "Prisma ORM",
+          "DnD",
+          "Tailwind CSS",
+          "Vite",
+        ],
+        "links": {
+          "github": "https://github.com/yazzdev/tugasin"
+        }
+      },
     {
-      id: 2,
+      id: 3,
       title: "Lunar Study Station",
       tags: ["React", "Fastify", "PostgreSQL", "Prisma", "AI"],
       description:
@@ -123,27 +165,6 @@ document.addEventListener("DOMContentLoaded", () => {
         github: "https://github.com/yazzdev/lunar-study-station",
       },
     },
-    {
-      id: 3,
-      title: "Project Example 3",
-      tags: ["Vue.js", "Firebase"],
-      description: "Description for the third project, showcasing different skills and technologies.",
-      thumbnails: [
-        {
-          src: "https://placehold.co/1200x800/10101a/4f46e5?text=Main+View",
-          title: "Main Dashboard",
-          description: "This is the main view of the application."
-        },
-        {
-          src: "https://placehold.co/1200x1800/10101a/4f46e5?text=Long+Screenshot",
-          title: "Feature Page (Scrollable)",
-          description: "A demonstration of a long screenshot that can be scrolled within the viewport."
-        }
-      ],
-      features: ["Feature A", "Feature B", "Feature C"],
-      techStack: ["Vue.js", "Firebase", "SCSS"],
-      links: { github: "#" }
-    }
   ];
 
   // --- Inisialisasi Library ---
