@@ -87,20 +87,20 @@ body:hover .cursor-glow {
 
 #stars {
     width: 1px; height: 1px; background: transparent;
-    box-shadow: /* Generated shadows here */; /* SASS generated 700 small stars */
+    box-shadow: ; 
     animation: animStar 150s linear infinite;
 }
 #stars2 {
     width: 2px; height: 2px; background: transparent;
-    box-shadow: /* Generated shadows here */; /* SASS generated 200 medium stars */
+    box-shadow: ; 
     animation: animStar 100s linear infinite;
 }
 #stars3 {
     width: 3px; height: 3px; background: transparent;
-    box-shadow: /* Generated shadows here */; /* SASS generated 100 large stars */
+    box-shadow: ;
     animation: animStar 50s linear infinite;
 }
-/* NOTE: The box-shadow values are too long to paste here. You'd use a SASS/SCSS preprocessor to generate them. For a quick fix, you can find online generators for "CSS box-shadow stars". */
+
 /* Placeholder for quick use (less stars) */
 #stars { box-shadow: 10px 815px #FFF, 1276px 1238px #FFF, 1856px 873px #FFF, 1940px 1483px #FFF, 411px 710px #FFF, 1421px 1195px #FFF, 1109px 1293px #FFF, 1599px 1113px #FFF, 887px 1133px #FFF, 143px 1864px #FFF, 1195px 632px #FFF, 73px 1852px #FFF, 1008px 612px #FFF, 112px 142px #FFF, 1166px 1866px #FFF, 1475px 827px #FFF, 115px 1200px #FFF, 542px 1235px #FFF, 1205px 146px #FFF, 1284px 1017px #FFF, 1374px 1729px #FFF, 1131px 1978px #FFF, 1222px 1335px #FFF, 246px 1438px #FFF, 1928px 1215px #FFF, 22px 1461px #FFF, 110px 1089px #FFF, 613px 1190px #FFF, 1290px 1117px #FFF, 1489px 1932px #FFF; animation: animStar 150s linear infinite; width: 1px; height: 1px; background: transparent;}
 #stars2 { box-shadow: 1591px 528px #FFF, 938px 1063px #FFF, 75px 1130px #FFF, 1869px 956px #FFF, 1116px 1604px #FFF, 482px 137px #FFF, 234px 1738px #FFF, 1146px 1665px #FFF, 1664px 621px #FFF, 1495px 1774px #FFF, 1584px 1807px #FFF, 1330px 1279px #FFF, 1149px 1361px #FFF, 1181px 1197px #FFF, 111px 1138px #FFF, 123px 1231px #FFF, 1690px 1658px #FFF, 451px 1334px #FFF, 1152px 66px #FFF, 1716px 1210px #FFF, 1135px 1878px #FFF, 989px 1261px #FFF, 115px 188px #FFF, 1528px 432px #FFF; animation: animStar 100s linear infinite; width: 2px; height: 2px; background: transparent;}
@@ -156,7 +156,7 @@ body:hover .cursor-glow {
     transition: transform 0.3s, box-shadow 0.3s, background-position 0.5s;
 }
 .btn-primary-custom:hover {
-    background-position: right center; /* Change the position of the gradient */
+    background-position: right center; 
     transform: translateY(-3px);
     box-shadow: 0 4px 25px var(--glow-color);
 }
@@ -275,7 +275,6 @@ body:hover .cursor-glow {
     border-radius: 8px;
 }
 .form-control:focus { background-color: var(--bg-medium); border-color: var(--primary); box-shadow: 0 0 10px var(--glow-color); color: var(--text-light); }
-/* IMPROVED: Placeholder contrast */
 .form-control::placeholder { color: var(--text-dark); opacity: 1; }
 
 /* MODAL ENHANCEMENTS */
@@ -284,7 +283,7 @@ body:hover .cursor-glow {
 
 /* NEW: Scrollable image viewport */
 .main-image-viewport {
-    max-height: 380px; /* Adjust as needed */
+    max-height: 380px; /* Penting */
     overflow-y: auto;
     border-radius: 10px;
     border: 1px solid var(--border-color);
@@ -310,7 +309,7 @@ body:hover .cursor-glow {
     background: transparent;
     border-color: var(--border-color);
     padding-left: 0;
-    color: var(--text-medium); /* Ensure readability */
+    color: var(--text-medium); 
 }
 #portfolio-details .list-group-item i { color: var(--primary); margin-right: 10px; }
 
