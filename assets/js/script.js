@@ -179,7 +179,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- NEW: Efek Cursor Glow ---
   const cursorGlow = document.querySelector('.cursor-glow');
   document.addEventListener('mousemove', e => {
-    // Gunakan translate3d untuk performa yang lebih baik
     cursorGlow.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
   });
 
@@ -219,7 +218,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // --- Fungsionalitas Portofolio (Diperbarui) ---
+  // --- Fungsionalitas Portofolio  ---
   const portfolioGrid = document.getElementById('portfolio-grid');
   const portfolioModalElement = document.getElementById('portfolioModal');
   const portfolioModal = new bootstrap.Modal(portfolioModalElement);
@@ -253,8 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Fungsi untuk mengisi data modal (Diperbarui)
   function populatePortfolioModal(project) {
     portfolioModalElement.querySelector('#portfolioModalLabel').textContent = project.title;
-
-    // Setel gambar, judul, dan deskripsi default (dari thumbnail pertama)
+    
     updateModalImage(project.thumbnails[1]);
 
     const thumbnailContainer = portfolioModalElement.querySelector('#thumbnail-container');
